@@ -306,7 +306,7 @@ loginRouter.post('/', async (request, response) => {
 
 Once the token expires, the client app needs to get a new token. Usually this happens by forcing the user to relogin to the app.
 
-The error handling middleware should be extended to give a proper error in the case of a expired token:
+The error handling middleware should be extended to give a proper error in the case of an expired token:
 
 ```js
 const errorHandler = (error, request, response, next) => {
